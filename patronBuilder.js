@@ -10,9 +10,6 @@ class ComputadoraBuilder {
         this.tarjetaGrafica = "";
         this.sistemaOperativo = "";
     }
-    // constructor (pProcesador:string, pRam:number, pAlmacenamiento:number, pTarjetaGrafica:string, pSistemaOperativo:string){
-    // super (pProcesador, pRam, pAlmacenamiento, pTarjetaGrafica, pSistemaOperativo)
-    // }
     setProcesador(pProcesador) {
         this.procesador = pProcesador;
         return this;
@@ -34,7 +31,7 @@ class ComputadoraBuilder {
         return this;
     }
     toString() {
-        return `La computadora fue creada personlizamente con un procesador ${this.procesador}, mas ${this.ram} MB de RAM, cuenta con un almacenamiento de ${this.almacenamiento} MB, y ah agregado un tarjeta grafica ${this.tarjetaGrafica} y el sistema operativa elejido es ${this.sistemaOperativo}`;
+        return `La computadora personalida quedo de la siguiente manera: cuenta con un procesador ${this.procesador}, mas ${this.ram} MB de RAM, cuenta con un almacenamiento de ${this.almacenamiento} MB, y ha agregado un tarjeta grafica ${this.tarjetaGrafica} y el sistema operativa elejido es ${this.sistemaOperativo}`;
     }
     build() {
         return new computadora_1.Computadora(this.procesador, this.ram, this.almacenamiento, this.tarjetaGrafica, this.sistemaOperativo);
